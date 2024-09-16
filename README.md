@@ -82,5 +82,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any questions or feedback, please contact us at [atzen@post.com](mailto:atzen@post.com).
 
 
-With Great Regards,
+Regards,
 Cayden

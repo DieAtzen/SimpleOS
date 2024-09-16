@@ -1,11 +1,10 @@
 #include <iostream>
 #include <string>
 
-// Function prototypes
+
 void displayHelp();
 void runCommand(const std::string& command);
 
-// A simple command handler
 void runCommand(const std::string& command) {
     if (command == "help") {
         displayHelp();
@@ -13,13 +12,13 @@ void runCommand(const std::string& command) {
         std::cout << "SimpleOS v1.0" << std::endl;
     } else if (command == "exit") {
         std::cout << "Exiting SimpleOS..." << std::endl;
-        exit(0); // Terminates the program
+        exit(0); 
     } else {
         std::cout << "Unknown command: " << command << std::endl;
     }
 }
 
-// Display help
+
 void displayHelp() {
     std::cout << "SimpleOS Help:" << std::endl;
     std::cout << "help    - Show this help message" << std::endl;
@@ -35,8 +34,8 @@ int main() {
 
     while (true) {
         std::cout << "> ";
-        std::getline(std::cin, command); // Read a line of input from the user
-        runCommand(command); // Process the command
+        std::getline(std::cin, command); 
+        runCommand(command); 
     }
 
     return 0;
